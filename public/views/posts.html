@@ -6,8 +6,9 @@
     </form>
     <div class="row posts">
         <div class=" small-12 columns" ng-repeat="post in pc.posts | orderBy:'createdAt': true">
-                <div class="small-12 columns">{{post.post}}</div>
-                <div class="small-3 columns small-offset-9">{{post.createdAt | date:'medium'}}</div>
+            <div class="small-12 columns">{{post.post}}</div>
+            <div class="small-3 columns">Said By <span class="username">{{post.username}}</span></div>
+            <div class="small-3 columns small-offset-6">{{post.createdAt | date:'medium'}}</div>
         </div>
     </div>
 </div>

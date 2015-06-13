@@ -8,7 +8,7 @@ var passport = require('passport');
 var session = require('express-session'); 
 var app = express();
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/learn');
+mongoose.connect('mongodb://kbarsiwal:hirdesh@ds055690.mongolab.com:55690/learn');
 require('./model/model');
 // view engine setup
 var auth = require('./routes/auth')(passport);
