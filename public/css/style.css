@@ -37,13 +37,15 @@ body {
 .content {
   margin-top: 9rem; }
 
-.posts > div {
-  margin: .25rem 0;
-  background-color: rgba(0, 0, 0, 0.46); }
-  .posts > div div:first-child {
-    font-size: 2rem; }
-  .posts > div div:last-child {
-    font-size: 1rem; }
+.posts {
+  margin-bottom: 3rem; }
+  .posts > div {
+    margin: .25rem 0;
+    background-color: rgba(0, 0, 0, 0.46); }
+    .posts > div div:first-child {
+      font-size: 2rem; }
+    .posts > div div:last-child {
+      font-size: 1rem; }
 
 .heading {
   font-family: 'Poiret One', cursive;

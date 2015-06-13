@@ -42,6 +42,7 @@ app.controller("postctrl", function ($scope, $http, $rootScope) {
     };
     self.submitpost = function () {
         self.newpost.username = $rootScope.currentUser;
+        if(self.newpost.post!='')
         $http.post('/api/post', self.newpost).success(function () {
             $http.get('/api/post').success(function (data) {
                 self.posts = data;
