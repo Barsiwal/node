@@ -63,8 +63,8 @@ app.controller('loginctrl', function ($scope, $http, $location, $rootScope) {
         password: ''
     };
     s.login = function () {
-        $http.post('/auth/login', s.user).success(function (user) {
-            $rootScope.currentUser = user.username;
+        $http.post('/auth/login', s.user).success(function (data) {
+            $rootScope.currentUser = data.user.username;
             if ($rootScope.currentUser) {
                 $rootScope.isAuth = true;
                 $location.path('/');
