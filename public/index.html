@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,300|Poiret+One' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div ng-app="app" class="container">
+        <ul class="nav row full-width">
+            <li class="small-6 columns heading">DinnerBone!</li>
+            <div class="small-6 columns heading " ng-hide="isAuth">
+                <a class="medium-3 medium-offset-5 columns button radius no-bmargin" href="#/login">login</a>
+                <a class="medium-3 columns button radius no-bmargin" href="#/signup">signup</a>
+            </div>
+            <a class="large-3 small-offset-3 columns button radius no-bmargin" ng-click="logout()" ng-show="isAuth">logout</a>
+        </ul>
+        <div class="content" ng-view></div>
+    </div>
+    <script src="javascripts/angular.js"></script>
+    <script src="javascripts/angular-route.js"></script>
+    <script src="javascripts/ngapp.js"></script>
+</body>
+
+</html>

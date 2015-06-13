@@ -1,0 +1,16 @@
+<div>
+    <h2>
+        {{ac.pagename}}
+    </h2>
+    <form class='row' ng-submit="ac.login()">
+        <div class="large-4 large-centered columns">
+            <input type="text" placeholder="username" ng-model="ac.user.username">
+        </div>
+        <div class="large-4 large-centered columns">
+            <input type="password" placeholder="password"ng-model="ac.user.password">
+        </div>
+        <div class="large-4 large-centered columns">
+            <input type="submit" class="button radius">
+        </div>
+    </form>
+</div>

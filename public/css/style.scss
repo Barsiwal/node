@@ -1,0 +1,65 @@
+body,
+.container {
+    font-family: 'Lato', sans-serif;
+    color: #fff !important;
+    h2 {
+        color: #fff !important;
+        text-align: center;
+        font-size: 4rem;
+        font-family: 'Poiret One', cursive;
+    }
+}
+
+.container {
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.full-width {
+    max-width: 100% !important;
+}
+
+body {
+    height: 100%;
+    background: url('../images/Flinders-Street-Melbourne-Night-Freehand-003-Black-White.jpg') center center no-repeat fixed;
+    background-size: cover;
+}
+
+.nav {
+    padding: .5rem;
+    list-style: none;
+    margin: 0;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.42);
+}
+
+.post-input {
+    height: 5em !important;
+    font-size: 3rem;
+}
+
+.no-bmargin {
+    margin-bottom: 0 !important;
+}
+
+.content {
+    margin-top: 9rem;
+}
+
+.posts {
+    >div {
+        margin: .25rem 0;
+        background-color: rgba(0, 0, 0, 0.46);
+        div:first-child {
+            font-size: 2rem;
+        }
+        div:last-child {
+            font-size: 1rem;
+        }
+    }
+}
+
+.heading {
+    font-family: 'Poiret One', cursive;
+    vertical-align: middle;
+    font-size: 2rem;
+}

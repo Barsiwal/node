@@ -1,0 +1,13 @@
+<div>
+    <form class='row' ng-submit="pc.submitpost()">
+        <input type='text' ng-model="pc.newpost.post" placeholder="Say Something!" class="small-12 post-input columns" />
+        <input type='submit' class="button radius small-3 columns" />
+
+    </form>
+    <div class="row posts">
+        <div class=" small-12 columns" ng-repeat="post in pc.posts | orderBy:'createdAt': true">
+                <div class="small-12 columns">{{post.post}}</div>
+                <div class="small-3 columns small-offset-9">{{post.createdAt | date:'medium'}}</div>
+        </div>
+    </div>
+</div>
